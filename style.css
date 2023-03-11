@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Infant&family=Montserrat&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*----------------------- NAV BAR----------------------- */
+header {
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    padding: 1rem;
+    font-weight: 900;
+    font-size: 2rem;
+    text-shadow: 1px 1px rgb(145, 145, 145);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #efeeee;
+    height: 3rem;
+    position: sticky;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 10px #a5a5a5;
+    z-index: 10;
+}
+.nav{
+    position: relative;
+    display: flex;
+}
+.nav .list_items {
+    list-style: none;
+    position: relative;
+}
+.nav .list_items::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    width: 0%;
+    height: 2px;
+    background: black;
+    transition: 0.3s ease-out;
+}
+.nav .list_items:hover::after{
+    left: 0;
+    width: 100%;
+}
+.nav .list_items a {
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+    transition: 0.4s ease-out;
+}
+
+.nav .list_items a:hover,
+nav .list_items a.active {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.nav .list_items a img {
+    width: 1.3rem;
+
+}
+
+/* --------------------- LANDING PAGE --------------------- */
+
+.container {
+    height: 700px;
+    background-color: rgb(221, 221, 221);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.landing_page h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 3rem;
+    text-shadow: 1px 1px 5px rgb(147, 147, 147);
+
+}
+
+.landing_page p {
+    margin: 5px;
+    text-align: center;
+}
+
+.btn {
+    padding: 4px 10px;
+    margin: 20px 240px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    background-color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+/*------------------- FEATURES SECTION ---------------------*/
+.features {
+    margin: 20px;
+    /* display: flex; */
+}
+
+.features h2 {
+
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 3rem;
+    text-shadow: 1px 1px 5px rgb(147, 147, 147);
+    text-align: center;
+    margin: 3rem;
+}
+
+.feature_box img {
+    height: 8rem;
+    display: block;
+    margin: auto;
+}
+
+.feature_box {
+    /* border: 3px solid red; */
+    padding: 12px 30px;
+    margin: 10px 64px;
+    border-radius: 20px;
+    /* background-color: #faebd726; */
+    display: inline-block;
+    /* justify-content: center; */
+}
+
+.feature_box h6 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* -------------------------BEST SELLING ---------------------- */
+#best_selling h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 3rem;
+    text-shadow: 1px 1px 5px rgb(147, 147, 147);
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#best_selling p {
+    margin: 5px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0rem;
+}
+
+.pro {
+    position: relative;
+    width: 20%;
+    height: 27rem;
+    padding: 0px 10px;
+    /* border: 2px solid black; */
+    box-shadow: 1px 1px 10px rgb(122, 122, 122);
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 1.5rem;
+}
+
+.pro:hover {
+    box-shadow: 1px 1px 10px black;
+    transition: 0.3s ease-in-out;
+}
+
+.pro img {
+    width: 100%;
+    height: 83%;
+    border-radius: 20px;
+}
+
+.description h5 {
+    font-size: 1.1rem;
+}
+
+.description img {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1.8rem;
+}
+
+/*--------------------------- NEW ARRIVALS ---------------- */
+#new h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 3rem;
+    text-shadow: 1px 1px 5px rgb(147, 147, 147);
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#new h4 {
+    margin: 1rem;
+    text-align: center;
+}
+
+#new p {
+    text-align: center;
+    margin: 1rem;
+}
+
+.new_btn {
+    display: flex;
+    margin: 1.5rem auto;
+    align-items: center;
+    padding: 4px 10px;
+    /* margin: 20px 440px; */
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.new_btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.new_btn:hover {
+    background-color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.products_new {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0rem;
+}
+
+.pro_new {
+    position: relative;
+    width: 20%;
+    height: 27rem;
+    padding: 0px 10px;
+    /* border: 2px solid black; */
+    box-shadow: 1px 1px 10px rgb(122, 122, 122);
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 1.5rem;
+}
+
+.pro_new:hover {
+    box-shadow: 1px 1px 10px black;
+    transition: 0.3s ease-in-out;
+}
+
+.pro_new img {
+    width: 100%;
+    height: 30%;
+    border-radius: 20px;
+    margin: 5.2rem 0rem;
+}
+
+.description_new h5 {
+    font-size: 1.1rem;
+}
+
+.description_new img {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1.8rem;
+}
+
+.chelsea img {
+    height: 50%;
+    margin: 2.5rem 0rem;
+}
+
+.description_new_1 h5 {
+    font-size: 1.1rem;
+}
+
+.description_new_1 img {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 4.5rem;
+}
+
+
+/* --------------- BANNERS -------------------------- */
+.banner {
+    background-color: rgb(221, 221, 221);
+    height: 20rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h4 {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-shadow: 1px 1px 5px rgb(147, 147, 147);
+    text-align: center;
+    /* margin-top: 3rem; */
+}
+
+.banner .btn_banner {
+    display: flex;
+    margin: 1.5rem auto;
+}
+
+/*------------------- NEWS LETTER -------------------------*/
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 10rem;
+    border: 2px solid black;
+    width: 100vw;
+    background-image: radial-gradient(circle, darkgray -40%, black);
+}
+#newsletter h3{
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    padding: 0.5rem 1.2rem;
+}
+#newsletter .news_text p{
+    color: #888888;
+    padding: 0rem 1.2rem;
+}
+#newsletter .news_text p span{
+    color: gold;
+}
+#newsletter .form{
+    display: flex;
+    align-items: center;
+}
+#newsletter input{
+    outline: none;
+    border-radius: 5px;
+    height: 1.8rem;
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid transparent;
+}
+#newsletter .btn_form{
+    background-color: gold;
+    padding: 7px 15px;
+    margin: 5px 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    width: 40%;
+    font-weight: bold;
+}
+
+/*---------------- FOOTER SECTION -----------------------*/
+footer .copyright{
+    height: 2rem;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
